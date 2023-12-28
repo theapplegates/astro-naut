@@ -2,19 +2,35 @@
 
 @font-face {
   font-display: optional;
-  font-family: "Anybody";
+  font-family: "GeistSans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/anybody-v11-latin-regular.woff2") format("woff2");
+  src: url("../fonts/GeistVariableVF.woff2") format("woff2");
 }
 
 @font-face {
   font-display: optional;
-  font-family: "Inter";
+  font-family: "GeistSans";
   font-style: normal;
   font-weight: 400;
-  src: url("../fonts/inter-v13-latin-regular.woff2") format("woff2");
+  src: url("../fonts/GeistVariableVF.woff2") format("woff2");
 }
+
+@font-face {
+  font-display: optional;
+  font-family: "GeistMono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/GeistMonoVariableVF.woff2") format("woff2");
+}
+@font-face {
+  font-display: optional;
+  font-family: "Atkinson-Hyperlegible";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/Atkinson-Hyperlegible-Regular-102a.woff2") format("woff2");
+}
+
 
 /* Focus behaviour */
 
@@ -51,12 +67,14 @@ body {
   background-attachment: fixed;
   background-image: url("../images/nnnoise-dark.svg");
   color: var(--color-grey-light);
-}
+  font-size: var(--step--1);
+  font-family: "Atkinson-Hyperlegible";
+  }
 
 h1,
 h2 {
   color: var(--color-white);
-  font-family: "Anybody", sans-serif;
+  font-family: "GeistSans";
 }
 
 h1 {
@@ -70,14 +88,24 @@ a,
 blockquote,
 ul,
 p {
-  font-family: "Inter", sans-serif;
-  font-size: var(--step-1);
+  font-family: "Atkinson-Hyperlegible";
+  font-size: var(--step--1);
   hyphens: auto;
 }
 
 code {
   color: var(--color-yellow);
   font-weight: bold;
+  font-family: "GeistMono";
+  font-size: var(--step--1);
+}
+
+@font-face {
+  font-display: optional;
+  font-family: "GeistMono";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/GeistMonoVariableVF.woff2") format("woff2");
 }
 
 .sr-only {
